@@ -14,6 +14,7 @@
 		844D392C1C3F5C9E00105F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844D392A1C3F5C9E00105F82 /* LaunchScreen.storyboard */; };
 		844D39371C3F5C9F00105F82 /* selfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39361C3F5C9F00105F82 /* selfiegramTests.swift */; };
 		844D39421C3F5C9F00105F82 /* selfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39411C3F5C9F00105F82 /* selfiegramUITests.swift */; };
+		844D39501C3F6F9400105F82 /* NewsFeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D394F1C3F6F9400105F82 /* NewsFeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		844D393D1C3F5C9F00105F82 /* selfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844D39411C3F5C9F00105F82 /* selfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfiegramUITests.swift; sourceTree = "<group>"; };
 		844D39431C3F5C9F00105F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844D394F1C3F6F9400105F82 /* NewsFeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				844D39211C3F5C9E00105F82 /* AppDelegate.swift */,
 				844D39231C3F5C9E00105F82 /* ViewController.swift */,
 				844D39251C3F5C9E00105F82 /* Main.storyboard */,
+				844D394F1C3F6F9400105F82 /* NewsFeedTableViewCell.swift */,
 				844D39281C3F5C9E00105F82 /* Assets.xcassets */,
 				844D392A1C3F5C9E00105F82 /* LaunchScreen.storyboard */,
 				844D392D1C3F5C9E00105F82 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				844D39241C3F5C9E00105F82 /* ViewController.swift in Sources */,
 				844D39221C3F5C9E00105F82 /* AppDelegate.swift in Sources */,
+				844D39501C3F6F9400105F82 /* NewsFeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
