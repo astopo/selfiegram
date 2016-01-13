@@ -34,7 +34,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcD-oc-VmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3002" y="587"/>
+            <point key="canvasLocation" x="2250" y="563"/>
         </scene>
         <!--NewsFeed Table View-->
         <scene sceneID="RyQ-MB-eQq">
@@ -90,6 +90,7 @@
                         <segue destination="jZQ-Iw-xvW" kind="relationship" relationship="viewControllers" id="dKF-Xi-ezj"/>
                         <segue destination="iTd-g5-iYr" kind="relationship" relationship="viewControllers" id="eMV-no-2TX"/>
                         <segue destination="CVr-dj-Ykg" kind="relationship" relationship="viewControllers" id="ZnC-QD-h8w"/>
+                        <segue destination="nCj-Zu-OhR" kind="relationship" relationship="viewControllers" id="ukf-7Q-wis"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbS-79-nmu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6V-B8-DNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688" y="1647"/>
+            <point key="canvasLocation" x="2250" y="1447"/>
         </scene>
         <!--News Feed-->
         <scene sceneID="wPL-Fm-Nlm">
@@ -173,7 +174,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPE-Qe-ZSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="-202"/>
+            <point key="canvasLocation" x="1386" y="-202"/>
         </scene>
         <!--Activities-->
         <scene sceneID="p0x-pB-6hm">
@@ -196,7 +197,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiS-EM-QD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2146" y="675"/>
+            <point key="canvasLocation" x="1386" y="555"/>
         </scene>
         <!--Profile-->
         <scene sceneID="vbA-8a-o5a">
@@ -219,13 +220,38 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c15-9G-dPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="1235"/>
+            <point key="canvasLocation" x="1386" y="1435"/>
+        </scene>
+        <!--Map Scene-->
+        <scene sceneID="sIU-LG-4L7">
+            <objects>
+                <viewController title="Map Scene" id="nCj-Zu-OhR" customClass="MapViewController" customModule="selfiegram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yiH-S8-l9C"/>
+                        <viewControllerLayoutGuide type="bottom" id="iXj-JL-9wM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gcL-Ng-0zP" customClass="MKMapView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iDV-Or-8JO">
+                                <rect key="frame" x="35" y="47" width="545" height="470"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="hearts-on" id="StK-XV-K99"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0F-Ej-hIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="2201"/>
         </scene>
     </scenes>
     <resources>
         <image name="Activities" width="25" height="25"/>
         <image name="NewsFeed" width="25" height="25"/>
         <image name="Profile" width="25" height="25"/>
+        <image name="hearts-on" width="42" height="37"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
 </document>
