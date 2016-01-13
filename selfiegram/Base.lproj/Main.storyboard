@@ -45,6 +45,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tyT-yF-rgo">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -52,6 +53,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tyT-yF-rgo" id="Jzb-YJ-ix6">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -97,7 +99,7 @@
         <!--Profile View-->
         <scene sceneID="rbr-o0-xnr">
             <objects>
-                <viewController title="Profile View" id="JBB-Wa-ytP" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" title="Profile View" id="JBB-Wa-ytP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p50-rQ-dMD"/>
                         <viewControllerLayoutGuide type="bottom" id="nWE-go-m30"/>
@@ -105,7 +107,33 @@
                     <view key="view" contentMode="scaleToFill" id="E3b-2o-Eup">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" layoutMarginsFollowReadableWidth="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-Pf-9qJ">
+                                <rect key="frame" x="223" y="110" width="154" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="CDB-Ce-nbM"/>
+                                    <constraint firstAttribute="width" constant="154" id="Lmi-D6-xUG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-ms-Iqs">
+                                <rect key="frame" x="261" y="294" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-bw-TYI">
+                                <rect key="frame" x="193" y="262" width="73" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hfm-Pf-9qJ" firstAttribute="leading" secondItem="dOM-bw-TYI" secondAttribute="trailing" constant="-43" id="1xM-Ue-1PI"/>
+                            <constraint firstItem="hfm-Pf-9qJ" firstAttribute="centerX" secondItem="E3b-2o-Eup" secondAttribute="centerX" id="Kdx-Nd-0NP"/>
+                            <constraint firstItem="S5t-ms-Iqs" firstAttribute="centerX" secondItem="E3b-2o-Eup" secondAttribute="centerX" id="MMD-3l-FLO"/>
+                            <constraint firstItem="dOM-bw-TYI" firstAttribute="top" secondItem="hfm-Pf-9qJ" secondAttribute="bottom" constant="-2" id="cuO-1f-Hz6"/>
+                            <constraint firstItem="S5t-ms-Iqs" firstAttribute="top" secondItem="hfm-Pf-9qJ" secondAttribute="bottom" constant="30" id="h4b-i7-2DO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="bCh-rP-zYt">
                         <barButtonItem key="backBarButtonItem" title="Profile" id="q8P-sa-BNb"/>
