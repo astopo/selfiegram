@@ -108,21 +108,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" layoutMarginsFollowReadableWidth="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-Pf-9qJ">
-                                <rect key="frame" x="223" y="110" width="154" height="154"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="hfm-Pf-9qJ">
+                                <rect key="frame" x="223" y="174" width="154" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="154" id="CDB-Ce-nbM"/>
                                     <constraint firstAttribute="width" constant="154" id="Lmi-D6-xUG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-ms-Iqs">
-                                <rect key="frame" x="261" y="294" width="79" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-ms-Iqs">
+                                <rect key="frame" x="261" y="358" width="79" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-bw-TYI">
-                                <rect key="frame" x="193" y="262" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-bw-TYI">
+                                <rect key="frame" x="212" y="326" width="54" height="30"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="cameraButtonPressed:" destination="JBB-Wa-ytP" eventType="touchUpInside" id="dLw-SE-fdx"/>
@@ -136,6 +136,7 @@
                             <constraint firstItem="S5t-ms-Iqs" firstAttribute="centerX" secondItem="E3b-2o-Eup" secondAttribute="centerX" id="MMD-3l-FLO"/>
                             <constraint firstItem="dOM-bw-TYI" firstAttribute="top" secondItem="hfm-Pf-9qJ" secondAttribute="bottom" constant="-2" id="cuO-1f-Hz6"/>
                             <constraint firstItem="S5t-ms-Iqs" firstAttribute="top" secondItem="hfm-Pf-9qJ" secondAttribute="bottom" constant="30" id="h4b-i7-2DO"/>
+                            <constraint firstItem="hfm-Pf-9qJ" firstAttribute="top" secondItem="p50-rQ-dMD" secondAttribute="bottom" constant="110" id="jjN-4M-jfb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="bCh-rP-zYt">
