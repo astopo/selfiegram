@@ -99,7 +99,7 @@
         <!--Profile View-->
         <scene sceneID="rbr-o0-xnr">
             <objects>
-                <viewController autoresizesArchivedViewToFullSize="NO" title="Profile View" id="JBB-Wa-ytP" sceneMemberID="viewController">
+                <viewController autoresizesArchivedViewToFullSize="NO" title="Profile View" id="JBB-Wa-ytP" customClass="ProfileViewController" customModule="selfiegram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p50-rQ-dMD"/>
                         <viewControllerLayoutGuide type="bottom" id="nWE-go-m30"/>
@@ -138,6 +138,10 @@
                     <navigationItem key="navigationItem" title="Profile" id="bCh-rP-zYt">
                         <barButtonItem key="backBarButtonItem" title="Profile" id="q8P-sa-BNb"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="profileImageView" destination="hfm-Pf-9qJ" id="OTK-AB-f12"/>
+                        <outlet property="usernameLabel" destination="S5t-ms-Iqs" id="jf4-z4-6s6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6V-B8-DNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
