@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Activities Table View-->
@@ -234,11 +235,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-E4-5Fg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="d8R-E4-5Fg">
+                                <rect key="frame" x="20" y="0.0" width="560" height="551"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nCj-Zu-OhR" id="mQH-RG-Cj7"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iXj-JL-9wM" firstAttribute="top" secondItem="d8R-E4-5Fg" secondAttribute="bottom" id="1i6-Ww-2Qp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d8R-E4-5Fg" secondAttribute="trailing" id="Pia-98-Be1"/>
+                            <constraint firstItem="d8R-E4-5Fg" firstAttribute="top" secondItem="gcL-Ng-0zP" secondAttribute="topMargin" id="W1i-R1-4fc"/>
+                            <constraint firstItem="d8R-E4-5Fg" firstAttribute="leading" secondItem="gcL-Ng-0zP" secondAttribute="leadingMargin" id="bPe-JF-SJr"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="hearts-on" id="StK-XV-K99"/>
                     <connections>
