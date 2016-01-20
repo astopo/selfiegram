@@ -14,6 +14,7 @@
 		844D392C1C3F5C9E00105F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844D392A1C3F5C9E00105F82 /* LaunchScreen.storyboard */; };
 		844D39371C3F5C9F00105F82 /* selfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39361C3F5C9F00105F82 /* selfiegramTests.swift */; };
 		844D39421C3F5C9F00105F82 /* selfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39411C3F5C9F00105F82 /* selfiegramUITests.swift */; };
+		84A7B0D31C4F32330008F288 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7B0D21C4F32330008F288 /* FeedViewController.swift */; };
 		84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84A311C45F65F000D9C58 /* ProfileViewController.swift */; };
 		84F683411C48A335007B078E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683401C48A335007B078E /* User.swift */; };
 		84F683431C48A3AF007B078E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683421C48A3AF007B078E /* Post.swift */; };
@@ -50,6 +51,7 @@
 		844D393D1C3F5C9F00105F82 /* selfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844D39411C3F5C9F00105F82 /* selfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfiegramUITests.swift; sourceTree = "<group>"; };
 		844D39431C3F5C9F00105F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A7B0D21C4F32330008F288 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		84A84A311C45F65F000D9C58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84F683401C48A335007B078E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84F683421C48A3AF007B078E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		844D39151C3F5C9E00105F82 = {
 			isa = PBXGroup;
 			children = (
+				84A7B0D21C4F32330008F288 /* FeedViewController.swift */,
 				84F683401C48A335007B078E /* User.swift */,
 				84F683421C48A3AF007B078E /* Post.swift */,
 				844D39201C3F5C9E00105F82 /* selfiegram */,
@@ -269,6 +272,7 @@
 				84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */,
 				844D39241C3F5C9E00105F82 /* ViewController.swift in Sources */,
 				844D39221C3F5C9E00105F82 /* AppDelegate.swift in Sources */,
+				84A7B0D31C4F32330008F288 /* FeedViewController.swift in Sources */,
 				84F683431C48A3AF007B078E /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
