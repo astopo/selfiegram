@@ -11,6 +11,8 @@ import UIKit
 class FeedViewController: UITableViewController {
     
     let words = ["Hello", "my", "name", "is", "Selfiegram"]
+    
+    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,15 @@ class FeedViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let me = User(username: "amy", profileImage: UIImage(named: "grumpy-cat")!)
+        let post0 = Post(user: me, image: UIImage(named: "grumpy-cat")!, comment: "Hey this is Grumpy Cat 0")
+        let post1 = Post(user: me, image: UIImage(named: "grumpy-cat")!, comment: "Hey this is Grumpy Cat 1")
+        let post2 = Post(user: me, image: UIImage(named: "grumpy-cat")!, comment: "Hey this is Grumpy Cat 2")
+        let post3 = Post(user: me, image: UIImage(named: "grumpy-cat")!, comment: "Hey this is Grumpy Cat 3")
+        let post4 = Post(user: me, image: UIImage(named: "grumpy-cat")!, comment: "Hey this is Grumpy Cat 4")
+        
+        posts = [post0, post1, post2, post3, post4]
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,9 +53,12 @@ class FeedViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath)
+        
+        let post = posts[indexPath.row]
 
         // Configure the cell...
-        cell.textLabel?.text = "\(words[indexPath.row])"
+        cell.imageView?.image = post.image
+        cell.textLabel?.text = post.comment
 
         return cell
     }
