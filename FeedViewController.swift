@@ -44,7 +44,7 @@ class FeedViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "This is a Post \(words[indexPath.row])"
+        cell.textLabel?.text = "\(words[indexPath.row])"
 
         return cell
     }
