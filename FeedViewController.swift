@@ -9,6 +9,8 @@
 import UIKit
 
 class FeedViewController: UITableViewController {
+    
+    let words = ["Hello", "my", "name", "is", "Selfiegram"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +36,7 @@ class FeedViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return words.count
     }
 
     
@@ -42,7 +44,7 @@ class FeedViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "This is a Post \(indexPath.row)"
+        cell.textLabel?.text = "This is a Post \(words[indexPath.row])"
 
         return cell
     }
