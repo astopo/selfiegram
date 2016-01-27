@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840DEE671C5867BC007C64F0 /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DEE661C5867BC007C64F0 /* SelfieCell.swift */; };
 		844D39221C3F5C9E00105F82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39211C3F5C9E00105F82 /* AppDelegate.swift */; };
 		844D39241C3F5C9E00105F82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39231C3F5C9E00105F82 /* ViewController.swift */; };
 		844D39271C3F5C9E00105F82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844D39251C3F5C9E00105F82 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840DEE661C5867BC007C64F0 /* SelfieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieCell.swift; sourceTree = "<group>"; };
 		844D391E1C3F5C9E00105F82 /* selfiegram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfiegram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844D39211C3F5C9E00105F82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844D39231C3F5C9E00105F82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				84A7B0D21C4F32330008F288 /* FeedViewController.swift */,
+				840DEE661C5867BC007C64F0 /* SelfieCell.swift */,
 				84F683401C48A335007B078E /* User.swift */,
 				84F683421C48A3AF007B078E /* Post.swift */,
 				844D39201C3F5C9E00105F82 /* selfiegram */,
@@ -270,6 +273,7 @@
 			files = (
 				84F683411C48A335007B078E /* User.swift in Sources */,
 				84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */,
+				840DEE671C5867BC007C64F0 /* SelfieCell.swift in Sources */,
 				844D39241C3F5C9E00105F82 /* ViewController.swift in Sources */,
 				844D39221C3F5C9E00105F82 /* AppDelegate.swift in Sources */,
 				84A7B0D31C4F32330008F288 /* FeedViewController.swift in Sources */,
