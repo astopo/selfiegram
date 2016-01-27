@@ -111,6 +111,7 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="commentLabel" destination="cb1-GV-9fB" id="Jwn-uI-2io"/>
                                     <outlet property="selfieImageView" destination="MDV-ib-H8b" id="ndy-W3-20R"/>
                                 </connections>
                             </tableViewCell>

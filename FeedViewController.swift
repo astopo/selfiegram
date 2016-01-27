@@ -53,12 +53,13 @@ class FeedViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! SelfieCell
-        
-        let post = posts[indexPath.row]
 
-        // Configure the cell...
-        cell.imageView?.image = post.image
-        cell.textLabel?.text = post.comment
+        let post = self.posts[indexPath.row]
+        cell.selfieImageView.image = post.image
+        print(post.user.username)
+        print(indexPath.row)
+        cell.usernameLabel.text = post.user.username
+        cell.commentLabel.text = post.comment
 
         return cell
     }

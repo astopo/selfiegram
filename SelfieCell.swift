@@ -12,7 +12,8 @@ class SelfieCell: UITableViewCell {
 
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var selfieImageView: UIImageView!
-    @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
