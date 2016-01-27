@@ -124,6 +124,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="NewsFeed Table" id="5G0-O9-0e7">
                         <barButtonItem key="backBarButtonItem" title="NewsFeed Table" id="AqX-qf-ku8"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="dwU-ks-Kww"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kX5-Ta-CtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
