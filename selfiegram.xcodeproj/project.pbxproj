@@ -111,8 +111,8 @@
 		844D39201C3F5C9E00105F82 /* selfiegram */ = {
 			isa = PBXGroup;
 			children = (
-				844D39211C3F5C9E00105F82 /* AppDelegate.swift */,
 				844D39231C3F5C9E00105F82 /* ViewController.swift */,
+				844D39211C3F5C9E00105F82 /* AppDelegate.swift */,
 				844D39251C3F5C9E00105F82 /* Main.storyboard */,
 				84A84A311C45F65F000D9C58 /* ProfileViewController.swift */,
 				844D39281C3F5C9E00105F82 /* Assets.xcassets */,
