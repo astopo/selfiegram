@@ -113,6 +113,7 @@
                                 <connections>
                                     <outlet property="commentLabel" destination="cb1-GV-9fB" id="Jwn-uI-2io"/>
                                     <outlet property="selfieImageView" destination="MDV-ib-H8b" id="ndy-W3-20R"/>
+                                    <outlet property="usernameLabel" destination="j9h-Q3-WEB" id="yt0-rA-kzu"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

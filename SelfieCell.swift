@@ -10,9 +10,9 @@ import UIKit
 
 class SelfieCell: UITableViewCell {
 
-    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var selfieImageView: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
