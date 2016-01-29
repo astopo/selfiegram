@@ -19,6 +19,7 @@
 		84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84A311C45F65F000D9C58 /* ProfileViewController.swift */; };
 		84F683411C48A335007B078E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683401C48A335007B078E /* User.swift */; };
 		84F683431C48A3AF007B078E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683421C48A3AF007B078E /* Post.swift */; };
+		99A7638DA80240C027E20CE2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54A4B27915F4FD1F99F6779 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,9 @@
 		84A84A311C45F65F000D9C58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84F683401C48A335007B078E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84F683421C48A3AF007B078E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		BE7133B2B7CDAAF04024696B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C54A4B27915F4FD1F99F6779 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0C2C9CD200349B7F1151F3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A7638DA80240C027E20CE2 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DA434BE5DA74D291FDC814D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C54A4B27915F4FD1F99F6779 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		844D39151C3F5C9E00105F82 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +108,8 @@
 				844D39351C3F5C9F00105F82 /* selfiegramTests */,
 				844D39401C3F5C9F00105F82 /* selfiegramUITests */,
 				844D391F1C3F5C9E00105F82 /* Products */,
+				AD0E0E3E1778D5FC3C2FB709 /* Pods */,
+				2DA434BE5DA74D291FDC814D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = selfiegramUITests;
 			sourceTree = "<group>";
 		};
+		AD0E0E3E1778D5FC3C2FB709 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0C2C9CD200349B7F1151F3B /* Pods.debug.xcconfig */,
+				BE7133B2B7CDAAF04024696B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 844D39461C3F5C9F00105F82 /* Build configuration list for PBXNativeTarget "selfiegram" */;
 			buildPhases = (
+				F3F9737A90825E650BDF5C3B /* Check Pods Manifest.lock */,
 				844D391A1C3F5C9E00105F82 /* Sources */,
 				844D391B1C3F5C9E00105F82 /* Frameworks */,
 				844D391C1C3F5C9E00105F82 /* Resources */,
+				404951B26175015532D8E8F2 /* Embed Pods Frameworks */,
+				991524C071E92ED2BD352234 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +292,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		404951B26175015532D8E8F2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		991524C071E92ED2BD352234 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F9737A90825E650BDF5C3B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		844D391A1C3F5C9E00105F82 /* Sources */ = {
@@ -417,6 +492,7 @@
 		};
 		844D39471C3F5C9F00105F82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C2C9CD200349B7F1151F3B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = selfiegram/Info.plist;
@@ -428,6 +504,7 @@
 		};
 		844D39481C3F5C9F00105F82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE7133B2B7CDAAF04024696B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = selfiegram/Info.plist;
