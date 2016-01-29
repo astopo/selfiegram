@@ -24,13 +24,11 @@ class FeedViewController: UITableViewController {
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: "https://www.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&api_key=e33dc5502147cf3fd3515aa44224783f&tags=cat")!) { (data, response, error) -> Void in
             
-            print ("inside dataTaskWithURL with data = \(data)")
             if let jsonUnformatted = try? NSJSONSerialization.JSONObjectWithData(data!, options: []),
                 let json = jsonUnformatted as? [String : AnyObject],
                 let photosDictionary = json["photos"] as? [String : AnyObject],
                 let photosArray = photosDictionary["photo"] as? [[String : AnyObject]]{
                     
-                    print(photosArray)
                     
                     for photo in photosArray {
                         
