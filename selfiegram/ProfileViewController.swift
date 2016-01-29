@@ -44,8 +44,6 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     @IBAction func cameraButtonPressed(sender: AnyObject) {
-        usernameLabel.text = "You pressed the button"
-        print("Camera butotn pressed")
         
         // 1. Create an ImagePickerController
         let pickerController = UIImagePickerController()
@@ -88,6 +86,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                             let image = UIImage(data: imageData)
                             self.profileImageView.image = image
                             print("Setting image")
+                        } else {
+                            print("Did not update image")
                         }
                     })
                     
