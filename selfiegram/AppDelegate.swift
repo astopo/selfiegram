@@ -26,17 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         user.username = username
         user.password = password
         
-        user.signUpInBackgroundWithBlock({ (success, error) -> Void in
+        user.signUpInBackgroundWithBlock { (success, error) -> Void in
             if success {
                 print("successfully signed up a user")
-            } else {
+            }else {
                 PFUser.logInWithUsernameInBackground(username, password: password, block: { (user, error) -> Void in
                     if let user = user {
-                        print("successfully logged in")
+                        print("successfully logged in \(user)")
                     }
                 })
             }
-        })
+        }
         
         // Override point for customization after application launch.
         return true
