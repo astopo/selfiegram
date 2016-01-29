@@ -20,14 +20,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("3bG8oeFi8kHXSFquh3Xr4hWwAU0SYGrf32qQML9B",
             clientKey: "MCgvEIXuX5cZr808NigzLFnVhKmd1mrwjwlo4mVG")
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+        let user = PFUser()
+        let username = "amy"
+        let password = "stopo"
+        user.username = username
+        user.password = password
+        
+        user.signUpInBackgroundWithBlock({ (success, error) -> Void in
             if success {
-                print("Object has been saved.")
+                print("successfully signed up a user")
+            } else {
+                PFUser.logInWithUsernameInBackground(username, password: password, block: { (user, error) -> Void in
+                    if let user = user {
+                        print("successfully logged in")
+                    }
+                })
             }
-        }
-
+        })
         
         // Override point for customization after application launch.
         return true
