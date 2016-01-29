@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Initialize Parse.
+        Parse.setApplicationId("3bG8oeFi8kHXSFquh3Xr4hWwAU0SYGrf32qQML9B",
+            clientKey: "MCgvEIXuX5cZr808NigzLFnVhKmd1mrwjwlo4mVG")
+        
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            if success {
+                print("Object has been saved.")
+            }
+        }
+
+        
         // Override point for customization after application launch.
         return true
     }

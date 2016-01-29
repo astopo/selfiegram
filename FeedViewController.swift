@@ -10,8 +10,6 @@ import UIKit
 
 class FeedViewController: UITableViewController {
     
-    let words = ["Hello", "my", "name", "is", "Selfiegram"]
-    
     var posts = [Post]()
 
     override func viewDidLoad() {
@@ -62,8 +60,6 @@ class FeedViewController: UITableViewController {
         }
         
         task.resume()
-        
-        print ("outside dataTaskWithURL")
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,7 +83,6 @@ class FeedViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! SelfieCell
         
-        print(posts)
 
         let post = self.posts[indexPath.row]
         //cell.selfieImageView.imageUrl = post.image
@@ -104,8 +99,6 @@ class FeedViewController: UITableViewController {
         }
         task.resume()
         
-        print(post.user.username)
-        print(indexPath.row)
         cell.usernameLabel.text = post.user.username
         cell.commentLabel.text = post.comment
 
