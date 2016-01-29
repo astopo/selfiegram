@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -17,9 +18,15 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-
-        usernameLabel.text = "AMY!"
+        // Do any additional setup after loading the view.gi
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let user = PFUser.currentUser() {
+            usernameLabel.text = user.username
+        }
     }
 
     override func didReceiveMemoryWarning() {
