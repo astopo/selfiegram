@@ -66,11 +66,6 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        // 1. When the delegate method is returned, it passes along a dictionary called info
-        
-        // 1. When the delegate method is returned, it passes along a dictionary called info.
-        //    This dictionary contains multiple things that maybe useful to us.
-        //    We are getting the image from the UIImagePickerControllerOriginalImage key in that dictionary
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             
             // setting the compression quality to 90%
@@ -78,22 +73,18 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 let imageFile = PFFile(data: imageData),
                 let user = PFUser.currentUser(){
                     
-                    // avatarImage is a new column in our User table
-                    user["avatarImage"] = imageFile
-                    user.saveInBackgroundWithBlock({ (success, error) -> Void in
+                    //2. We create a Post object from the image
+                    let post = Post(image: imageFile, user: user, comment: "A Selfie")
+                    
+                    post.saveInBackgroundWithBlock({ (success, error) -> Void in
                         if success {
-                            // set our profileImageView to be the image we have picked
-                            let image = UIImage(data: imageData)
-                            self.profileImageView.image = image
-                            print("Setting image")
-                        } else {
-                            print("Did not update image")
+                            print("Post successfully saved in Parse")
+                            
+                           // self.posts.insert(post, atIndex: 0)
+                            
                         }
                     })
-                    
             }
-            
-            
         }
         
         //3. We remember to dismiss the Image Picker from our screen.
