@@ -14,8 +14,12 @@ class SelfieCell: UITableViewCell {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     
-    @IBAction func likeButtonClicked(sender: AnyObject) {
-        //
+    @IBAction func likeButtonClicked(sender: UIButton) {
+        // the ! symbol means NOT
+        // We are therefore setting the button's selected state to
+        // the opposite of what it was. This is a great way to toggle
+        // a button from on to off and visa-versa
+        sender.selected = !sender.selected
     }
     
     override func awakeFromNib() {
