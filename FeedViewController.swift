@@ -17,6 +17,17 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         super.viewDidLoad()
         
         
+        if let query = Post.query() {
+            query.orderByDescending("createdAt")
+            query.includeKey("user")
+            query.findObjectsInBackgroundWithBlock({ (posts, error) -> Void in
+                if let posts = posts as? [Post]{
+                    self.posts = posts
+                    self.tableView.reloadData()
+                }
+            })
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +54,14 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
 
         let post = self.posts[indexPath.row]
         cell.selfieImageView.image = nil
+        
+        let imageFile = post.image
+        imageFile.getDataInBackgroundWithBlock { (data, error) -> Void in
+            if let data = data {
+                let image = UIImage(data: data)
+                cell.selfieImageView.image = image
+            }
+        }
         
         cell.usernameLabel.text = post.user.username
         cell.commentLabel.text = post.comment
@@ -87,7 +106,14 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
                         if success {
                             print("Post successfully saved in Parse")
                             
-                            // self.posts.insert(post, atIndex: 0)
+                            self.posts.insert(post, atIndex: 0)
+                            
+                            //4. Now that we have added a post, updating our table
+                            //   We are just inserting our new Post instead of reloading our whole tableView
+                            //   Both method would work, however, this gives us a cool animation for free
+                            
+                            let indexPath =  NSIndexPath(forRow: 0, inSection: 0)
+                            self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                             
                         }
                     })
