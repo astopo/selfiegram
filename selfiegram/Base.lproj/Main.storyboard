@@ -87,14 +87,17 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of3-ip-bYs">
-                                            <rect key="frame" x="549" y="255" width="42" height="37"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of3-ip-bYs">
+                                            <rect key="frame" x="569" y="264" width="23" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="E9G-pD-bRU"/>
                                                 <constraint firstAttribute="width" constant="23" id="Sar-RY-kPX"/>
                                             </constraints>
                                             <state key="normal" image="hearts-off"/>
                                             <state key="selected" image="hearts-on"/>
+                                            <connections>
+                                                <action selector="likeButtonClicked:" destination="tyT-yF-rgo" eventType="touchUpInside" id="va1-2Q-TUu"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
