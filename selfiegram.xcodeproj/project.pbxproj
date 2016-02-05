@@ -19,6 +19,7 @@
 		84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84A311C45F65F000D9C58 /* ProfileViewController.swift */; };
 		84F683411C48A335007B078E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683401C48A335007B078E /* User.swift */; };
 		84F683431C48A3AF007B078E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683421C48A3AF007B078E /* Post.swift */; };
+		84F70C701C65298700CA6CBE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F70C6F1C65298700CA6CBE /* Activity.swift */; };
 		99A7638DA80240C027E20CE2 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54A4B27915F4FD1F99F6779 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		84A84A311C45F65F000D9C58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84F683401C48A335007B078E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		84F683421C48A3AF007B078E /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../Post.swift; sourceTree = "<group>"; };
+		84F70C6F1C65298700CA6CBE /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BE7133B2B7CDAAF04024696B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C54A4B27915F4FD1F99F6779 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C2C9CD200349B7F1151F3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				840DEE661C5867BC007C64F0 /* SelfieCell.swift */,
 				84F683401C48A335007B078E /* User.swift */,
 				84F683421C48A3AF007B078E /* Post.swift */,
+				84F70C6F1C65298700CA6CBE /* Activity.swift */,
 				844D39231C3F5C9E00105F82 /* ViewController.swift */,
 				844D39211C3F5C9E00105F82 /* AppDelegate.swift */,
 				844D39251C3F5C9E00105F82 /* Main.storyboard */,
@@ -352,6 +355,7 @@
 				844D39241C3F5C9E00105F82 /* ViewController.swift in Sources */,
 				844D39221C3F5C9E00105F82 /* AppDelegate.swift in Sources */,
 				84A7B0D31C4F32330008F288 /* FeedViewController.swift in Sources */,
+				84F70C701C65298700CA6CBE /* Activity.swift in Sources */,
 				84F683431C48A3AF007B078E /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,31 @@ class SelfieCell: UITableViewCell {
     @IBOutlet weak var commentLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     
+    var post:Post? {
+        
+        // didSet is run when we set this variable in FeedViewController
+        didSet{
+            if let post = post {
+                
+                // I've added the below line to prevent flickering of images
+                // This always resets the image to blank, waits for the image to download, and then sets it
+                selfieImageView.image = nil
+                
+                let imageFile = post.image
+                imageFile.getDataInBackgroundWithBlock { (data, error) -> Void in
+                    if let data = data {
+                        let image = UIImage(data: data)
+                        self.selfieImageView.image = image
+                    }
+                }
+                
+                usernameLabel.text = post.user.username
+                commentLabel.text = post.comment
+                
+            }
+        }
+    }
+    
     @IBAction func likeButtonClicked(sender: UIButton) {
         // the ! symbol means NOT
         // We are therefore setting the button's selected state to
