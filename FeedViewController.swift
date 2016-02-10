@@ -12,7 +12,11 @@ import Parse
 class FeedViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var posts = [Post]()
-
+    
+    @IBAction func doubleTappedSelfie(sender: UITapGestureRecognizer) {
+        print("DOUBLE TAPPED")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
