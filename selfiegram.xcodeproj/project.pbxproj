@@ -15,6 +15,8 @@
 		844D392C1C3F5C9E00105F82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844D392A1C3F5C9E00105F82 /* LaunchScreen.storyboard */; };
 		844D39371C3F5C9F00105F82 /* selfiegramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39361C3F5C9F00105F82 /* selfiegramTests.swift */; };
 		844D39421C3F5C9F00105F82 /* selfiegramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D39411C3F5C9F00105F82 /* selfiegramUITests.swift */; };
+		849627A01C6AE03E00F7BA70 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496279F1C6AE03E00F7BA70 /* ActivityViewController.swift */; };
+		849627A21C6AE05300F7BA70 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849627A11C6AE05300F7BA70 /* ActivityCell.swift */; };
 		84A7B0D31C4F32330008F288 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A7B0D21C4F32330008F288 /* FeedViewController.swift */; };
 		84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A84A311C45F65F000D9C58 /* ProfileViewController.swift */; };
 		84F683411C48A335007B078E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F683401C48A335007B078E /* User.swift */; };
@@ -55,6 +57,8 @@
 		844D393D1C3F5C9F00105F82 /* selfiegramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfiegramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844D39411C3F5C9F00105F82 /* selfiegramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selfiegramUITests.swift; sourceTree = "<group>"; };
 		844D39431C3F5C9F00105F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8496279F1C6AE03E00F7BA70 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		849627A11C6AE05300F7BA70 /* ActivityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 		84A7B0D21C4F32330008F288 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = ../FeedViewController.swift; sourceTree = "<group>"; };
 		84A84A311C45F65F000D9C58 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		84F683401C48A335007B078E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				840DEE661C5867BC007C64F0 /* SelfieCell.swift */,
 				84F683401C48A335007B078E /* User.swift */,
 				84F683421C48A3AF007B078E /* Post.swift */,
+				8496279F1C6AE03E00F7BA70 /* ActivityViewController.swift */,
+				849627A11C6AE05300F7BA70 /* ActivityCell.swift */,
 				84F70C6F1C65298700CA6CBE /* Activity.swift */,
 				844D39231C3F5C9E00105F82 /* ViewController.swift */,
 				844D39211C3F5C9E00105F82 /* AppDelegate.swift */,
@@ -351,8 +357,10 @@
 			files = (
 				84F683411C48A335007B078E /* User.swift in Sources */,
 				84A84A321C45F65F000D9C58 /* ProfileViewController.swift in Sources */,
+				849627A21C6AE05300F7BA70 /* ActivityCell.swift in Sources */,
 				840DEE671C5867BC007C64F0 /* SelfieCell.swift in Sources */,
 				844D39241C3F5C9E00105F82 /* ViewController.swift in Sources */,
+				849627A01C6AE03E00F7BA70 /* ActivityViewController.swift in Sources */,
 				844D39221C3F5C9E00105F82 /* AppDelegate.swift in Sources */,
 				84A7B0D31C4F32330008F288 /* FeedViewController.swift in Sources */,
 				84F70C701C65298700CA6CBE /* Activity.swift in Sources */,
