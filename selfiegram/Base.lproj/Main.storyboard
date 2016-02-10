@@ -38,8 +38,10 @@
                             <outlet property="delegate" destination="gf7-pH-qSc" id="87n-gE-bHd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Activities Table" id="gdQ-GY-sVG">
-                        <barButtonItem key="backBarButtonItem" title="Activities Table" id="mwn-ab-MZZ"/>
+                    <navigationItem key="navigationItem" title="Activities" id="gdQ-GY-sVG">
+                        <barButtonItem key="backBarButtonItem" title="Activities Table" id="mwn-ab-MZZ">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vcD-oc-VmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
