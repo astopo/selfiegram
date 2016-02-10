@@ -56,6 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <color key="separatorColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
@@ -164,16 +165,10 @@
                         <gestureRecognizers/>
                         <connections>
                             <action selector="refreshPulled:" destination="8Xe-m4-EKz" eventType="valueChanged" id="D7x-6j-k6a"/>
-                            <outletCollection property="gestureRecognizers" destination="9S3-nc-e2F" appends="YES" id="UHl-om-loI"/>
                         </connections>
                     </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kX5-Ta-CtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="9S3-nc-e2F">
-                    <connections>
-                        <action selector="doubleTappedSelfie:" destination="8Xe-m4-EKz" id="hgZ-GH-lBy"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2258" y="-202"/>
         </scene>

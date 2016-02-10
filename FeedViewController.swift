@@ -21,6 +21,11 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         super.viewDidLoad()
         
         getPosts()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: "doubleTappedSelfie:")
+        tapGesture.numberOfTapsRequired = 2
+        tableView.addGestureRecognizer(tapGesture)
+        
     }
 
     override func didReceiveMemoryWarning() {
