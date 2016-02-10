@@ -15,6 +15,13 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
     
     @IBAction func doubleTappedSelfie(sender: UITapGestureRecognizer) {
         print("DOUBLE TAPPED")
+        
+        let tapLocation = sender.locationInView(tableView)
+        
+        if let indexPathAtTapLocation = tableView.indexPathForRowAtPoint(tapLocation) {
+            let cell = tableView.cellForRowAtIndexPath(indexPathAtTapLocation) as! SelfieCell
+            cell.tapAnimation()
+        }
     }
     
     override func viewDidLoad() {

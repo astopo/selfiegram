@@ -111,10 +111,18 @@
                                                 <action selector="likeButtonClicked:" destination="tyT-yF-rgo" eventType="touchUpInside" id="va1-2Q-TUu"/>
                                             </connections>
                                         </button>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hearts-on" translatesAutoresizingMaskIntoConstraints="NO" id="hVm-Xg-p6b">
+                                            <rect key="frame" x="289.5" y="124" width="23" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="K9R-S4-fxq"/>
+                                                <constraint firstAttribute="width" constant="23" id="tZn-Ty-ZkO"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="cb1-GV-9fB" firstAttribute="top" secondItem="j9h-Q3-WEB" secondAttribute="bottom" constant="10" id="2Th-M1-pF4"/>
+                                        <constraint firstItem="hVm-Xg-p6b" firstAttribute="centerY" secondItem="MDV-ib-H8b" secondAttribute="centerY" id="3fb-YG-YMF"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="MDV-ib-H8b" secondAttribute="trailing" id="491-A8-7Vu"/>
                                         <constraint firstItem="MDV-ib-H8b" firstAttribute="trailing" secondItem="Jzb-YJ-ix6" secondAttribute="trailingMargin" constant="1" id="4bW-Aj-nIU"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="j9h-Q3-WEB" secondAttribute="trailing" id="8iS-8G-fVU"/>
@@ -124,6 +132,7 @@
                                         <constraint firstItem="of3-ip-bYs" firstAttribute="top" secondItem="Jzb-YJ-ix6" secondAttribute="top" constant="264" id="W7T-iR-A5I"/>
                                         <constraint firstItem="MDV-ib-H8b" firstAttribute="top" secondItem="Jzb-YJ-ix6" secondAttribute="topMargin" constant="1" id="Yj1-h7-LyT"/>
                                         <constraint firstAttribute="trailing" secondItem="of3-ip-bYs" secondAttribute="trailing" constant="8" id="hf9-RI-Lgw"/>
+                                        <constraint firstItem="hVm-Xg-p6b" firstAttribute="centerX" secondItem="MDV-ib-H8b" secondAttribute="centerX" id="qZD-dd-lyC"/>
                                         <constraint firstItem="j9h-Q3-WEB" firstAttribute="top" secondItem="MDV-ib-H8b" secondAttribute="bottom" id="qs8-Ay-JMF"/>
                                         <constraint firstItem="MDV-ib-H8b" firstAttribute="leading" secondItem="Jzb-YJ-ix6" secondAttribute="leadingMargin" constant="1" id="s9G-yI-EZ0"/>
                                         <constraint firstItem="j9h-Q3-WEB" firstAttribute="leading" secondItem="Jzb-YJ-ix6" secondAttribute="leadingMargin" id="vQ7-Dw-fgL"/>

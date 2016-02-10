@@ -59,6 +59,10 @@ class SelfieCell: UITableViewCell {
         }
     }
     
+    func tapAnimation() {
+        print("TAPPED A CELL")
+    }
+    
     @IBAction func likeButtonClicked(sender: UIButton) {
         // the ! symbol means NOT
         // We are therefore setting the button's selected state to
