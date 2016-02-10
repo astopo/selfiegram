@@ -113,6 +113,9 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         dismissViewControllerAnimated(true, completion: nil)
     }
 
+    @IBAction func refreshPulled(sender: AnyObject) {
+        print("REFRESH!")
+    }
 
     /*
     // Override to support conditional editing of the table view.

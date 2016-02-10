@@ -149,7 +149,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="NewsFeed Table" id="5G0-O9-0e7">
-                        <barButtonItem key="backBarButtonItem" title="NewsFeed Table" id="AqX-qf-ku8"/>
+                        <barButtonItem key="backBarButtonItem" title="NewsFeed Table" id="AqX-qf-ku8">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="dwU-ks-Kww">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -157,6 +159,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="S0B-U1-fSf">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refreshPulled:" destination="8Xe-m4-EKz" eventType="valueChanged" id="D7x-6j-k6a"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kX5-Ta-CtP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
