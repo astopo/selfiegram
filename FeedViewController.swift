@@ -16,18 +16,7 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        if let query = Post.query() {
-            query.orderByDescending("createdAt")
-            query.includeKey("user")
-            query.findObjectsInBackgroundWithBlock({ (posts, error) -> Void in
-                if let posts = posts as? [Post]{
-                    self.posts = posts
-                    self.tableView.reloadData()
-                }
-            })
-        }
-
+        getPosts()
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,6 +104,24 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
 
     @IBAction func refreshPulled(sender: AnyObject) {
         print("REFRESH!")
+        getPosts()
+    }
+    
+    func getPosts() {
+        
+        if let query = Post.query() {
+            query.orderByDescending("createdAt")
+            query.includeKey("user")
+            query.findObjectsInBackgroundWithBlock({ (posts, error) -> Void in
+                if let posts = posts as? [Post]{
+                    self.posts = posts
+                    self.tableView.reloadData()
+                    // remove the spinning circle if needed
+                    self.refreshControl?.endRefreshing()
+                }
+            })
+        }
+
     }
 
     /*
