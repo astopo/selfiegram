@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Post.registerSubclass()
         Activity.registerSubclass()
         // Initialize Parse.
-        Parse.setApplicationId("3bG8oeFi8kHXSFquh3Xr4hWwAU0SYGrf32qQML9B",
-            clientKey: "MCgvEIXuX5cZr808NigzLFnVhKmd1mrwjwlo4mVG")
+        Parse.setApplicationId("5CDeHX2xNhW11QZXr9AvtBbEQY0lft4jpUuMFt9g",
+            clientKey: "SO1UFKR9k8RsLx1FsXzBjyI6IjsKxm2K0jcm48dG")
         
         let user = PFUser()
         let username = "amy"

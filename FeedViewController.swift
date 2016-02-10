@@ -36,6 +36,8 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         // Add to table view
         tableView.addGestureRecognizer(tapGesture)
         
+        navigationItem.titleView = UIImageView(image: UIImage(named: "Selfigram-logo"))
+        
     }
 
     override func didReceiveMemoryWarning() {
