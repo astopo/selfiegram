@@ -21,6 +21,26 @@ class ActivityViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        if let query = Activity.query() {
+            query.orderByDescending("createdAt")
+            // we need to get the details inside user (like username). so we include it in this query
+            query.includeKey("user")
+            // ditto for post.user to get the username of the user that submitted the post.
+            query.includeKey("post.user")
+            query.findObjectsInBackgroundWithBlock({ (activities, error) -> Void in
+                
+                if let activities = activities as? [Activity]{
+                    // update our array with new data from Parse
+                    self.activities = activities
+                    // reload the table view so new content shows
+                    self.tableView.reloadData()
+                }
+                
+            })
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,12 +61,16 @@ class ActivityViewController: UITableViewController {
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("activityCell", forIndexPath: indexPath)
 
         // Configure the cell...
         let activity = activities[indexPath.row]
         
-
+        if let liker = activity.user.username,
+            userBeingLiked = activity.post.user.username {
+                cell.textLabel?.text = "💛" + "\(liker) liked \(userBeingLiked)'s photo"
+        }
+        
         return cell
     }
 
