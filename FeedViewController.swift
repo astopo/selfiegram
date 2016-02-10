@@ -22,8 +22,11 @@ class FeedViewController: UITableViewController, UIImagePickerControllerDelegate
         
         getPosts()
         
+        // Create tap gesture, point to action
         let tapGesture = UITapGestureRecognizer(target: self, action: "doubleTappedSelfie:")
+        
         tapGesture.numberOfTapsRequired = 2
+        // Add to table view
         tableView.addGestureRecognizer(tapGesture)
         
     }
