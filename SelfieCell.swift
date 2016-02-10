@@ -71,6 +71,8 @@ class SelfieCell: UITableViewCell {
                 self.heartAnimationView.hidden = true
         
         }
+        
+        likeButtonClicked(likeButton)
     }
     
     @IBAction func likeButtonClicked(sender: UIButton) {
